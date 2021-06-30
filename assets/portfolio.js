@@ -9,9 +9,18 @@ const menuMobileButton = document.querySelector('.menu-mobile-action');
 const menuMobile = document.querySelector('.menu-mobile');
 const menuMobileItems = document.querySelectorAll('.menu-mobile a');
 const arrow = document.querySelectorAll('.arrow');
+const close = document.querySelector('.close');
 
 menuMobileButton.addEventListener('click', (e)=> {
 	menuMobile.classList.add('show');
+})
+
+menuMobileButton.addEventListener('touchmove', (e)=> {
+	menuMobile.classList.add('show');
+})
+
+close.addEventListener('click', (e) => {
+	menuMobile.classList.remove('show');
 })
 
 menuMobileItems.forEach(item => {

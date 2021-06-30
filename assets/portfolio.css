@@ -297,7 +297,7 @@ details div {
 
 @media (max-width: 800px) {
 	h2 {
-		font-size: 2.2rem;
+		font-size: 2rem;
 	}
 
 	.hamburguer {
@@ -315,6 +315,7 @@ details div {
 	.menu-mobile {
 		display: none;
 		height: 100vh;
+		overflow: hidden;
 		width: 100vw;
 	}
 
@@ -341,7 +342,15 @@ details div {
 		left: 0;
 		position: fixed;
 		top: 0;
-		z-index: 30;
+		z-index: 50;
+	}
+
+	.close {
+		height: 30px;
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		width: 30px;
 	}
 
 	nav {
